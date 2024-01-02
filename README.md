@@ -13,7 +13,7 @@
   - View size guide
   
 2. Smoke Test
-  - Whole process from selecting the product to buying it was showed.
+  - Process from selecting the product, choosing the right color and size to the buying process was demonstrated.
 
  <br />
   <br />
