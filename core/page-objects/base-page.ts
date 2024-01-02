@@ -45,6 +45,24 @@ export default class BasePage {
     async fillInputField(inputField: By, text: string) {
         await (await this.findElement(inputField)).sendKeys(text);
     }
+     //method: to navigate to specific url 
+    async navigateTo(url: string) {
+        await this.driver.get(url);
+        await this.driver.manage().window().maximize(); // (optional) maximize the window after navigating to the URL
+    }
+    
+    // Method to click a button
+    async clickButton(selector: By) {
+        const buttonElement = await this.findElement(selector);
+        await buttonElement.click();
+    }
+
+    //Method: wait for element to be visible
+    async waitForElementVisible(locator: By, timeout: number) {
+        const element = await this.driver.wait(until.elementLocated(locator), timeout);
+        return this.driver.wait(until.elementIsVisible(element), timeout);
+    }
+
 
 
 
