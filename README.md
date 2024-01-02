@@ -15,7 +15,8 @@
 2. Smoke Test
   - Whole process from selecting the product to buying it was showed.
 
-
+ <br />
+  <br />
 
 
 
