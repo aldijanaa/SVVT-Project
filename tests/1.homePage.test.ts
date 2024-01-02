@@ -3,7 +3,7 @@ import { createDriver, quitDriver } from "../core/config/driver-setup";
 import { readFileSync } from "fs";
 import * as path from "path"; 
 
-import { HomePage } from "../core/page-objects/home-page";
+import { HomePage } from "../core/page-objects/home-page2";
 
 //NOTE: everything starts from home-page
 
