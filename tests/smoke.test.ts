@@ -51,6 +51,24 @@ test("smoke test", async () => {
     await checkoutPage.enterAddress();
     await checkoutPage.enterHouseNumber();
     await checkoutPage.enterZipCode();
+    await checkoutPage.enterCity();
+
+    //aldijana dio
+    await checkoutPage.enterEmailOrderInfo();
+    await checkoutPage.clickPaymentButton();
+    await checkoutPage.chooseCreditCard();
+    await checkoutPage.clickOnSelectPayment();
+
+    //enter credit card info
+    await checkoutPage.enterNameOfCreditCard();
+    await checkoutPage.enterCardNumber();
+    await checkoutPage.enterSecurityCode();
+    await checkoutPage.chooseExpirationMonth();
+    await checkoutPage.chooseExpirationYear();
+    await checkoutPage.clickOnSelectPaymentMethod();
+
+    //buy info page
+    await checkoutPage.clickBuyButton();
     
 },5000000);
 

@@ -17,7 +17,8 @@
         "shipping_lastname" : "Walker",
         "shipping_address" : "Am Krupfgraben",
         "house_number" : "2",
-        "zip_code" : "10115"
+        "zip_code" : "10115",
+        "city":"berlin"
     },
 
     "verification_message": {
@@ -28,5 +29,10 @@
         "successful_size_filtering" : "Size: 38",
         "successful_colour_filtering" : "Colour: Black"
     
+    },
+    "credit_card_info":{
+        "name":"Alayna Walker",
+        "card_number":"4005519200000004",
+        "security_code":"123"
     }
 }
