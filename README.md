@@ -5,7 +5,7 @@
   - Add items to cart
   - Removing items from the cart
   - Category filtering
-  ** Registration of the user
+  - Registration of the user
   - Login of the user
   - Add to ‘Favorites’ section
   - Remove from 'Favorites' section
