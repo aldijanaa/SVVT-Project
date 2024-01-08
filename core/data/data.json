@@ -5,7 +5,7 @@
     },
 
     "data":{
-        "email": "testemail9@gmail.com",
+        "email": "testemail10@gmail.com",
         "login_email" : "pproba415@gmail.com",
         "login_email2" : "sunflower442356@gmail.com"
        
@@ -25,6 +25,7 @@
         "registration_message": "WELCOME TO THE PUMA FAM",
         "login_message": "My Account",
         "added_to_cart" : "1 item(s) added to your cart!",
+        "confirm_successful_removal" : "CART IS EMPTY",
         "successful_filtering" : "Price: 120 € - 200 €",
         "successful_size_filtering" : "Size: 38",
         "successful_colour_filtering" : "Colour: Black"
@@ -37,5 +38,5 @@
     },
     "search_item":{
         "item":"sneakers"
-    },
+    }
 }

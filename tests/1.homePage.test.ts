@@ -14,7 +14,6 @@ let driver: WebDriver;
 let homePage: HomePage;  //ovo je predhodni productSearch
 
 
-
 beforeAll(async () => {
     driver = await createDriver(testData.url.home_page);  //calling driver in this
     homePage = new HomePage(driver);   //object of the class

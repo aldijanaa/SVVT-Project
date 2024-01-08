@@ -27,8 +27,6 @@ test("category filtering", async () => {
     await sneakersPage.clickOnPriceButton();
     await sneakersPage.chooseOnePriceOption();
     await sneakersPage.clickToClosePriceFilter();
-    //await sneakersPage.clickToSeeAllOptions();
-    //await sneakersPage.checkPricesInRange();
     await sneakersPage.verifyFiltration();
     await sneakersPage.openSizeFilter();
     await sneakersPage.chooseOneSize();

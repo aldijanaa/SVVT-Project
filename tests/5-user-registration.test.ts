@@ -5,7 +5,8 @@ import { readFileSync } from "fs";
 import * as path from "path";
 import { LoginPage } from "../core/page-objects/login-page";
 
-/*HIGHLY IMPORTANT -> Prije nego sto runnam svaki register, treba promijeniti email u data.json, samo staviti neki drugi broj*/
+/*HIGHLY IMPORTANT -> Before you run this test, change the number in the email for 
+this test in the data.json*/
 
 const dataFilePath = path.resolve(__dirname, "../core/data/data.json");
 const testData = JSON.parse(readFileSync(dataFilePath, "utf8"));

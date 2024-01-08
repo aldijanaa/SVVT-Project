@@ -11,7 +11,7 @@ const testData = JSON.parse(readFileSync(dataFilePath, "utf8"));
 
 let driver: WebDriver;
 let checkFavoriteItems: CheckFavorites;
-let homePage: HomePage
+let homePage: HomePage;
 
 beforeAll(async () => {
     driver = await createDriver(testData.url.home_page);  

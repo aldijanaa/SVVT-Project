@@ -18,25 +18,19 @@ export class HomePage extends BasePage {
     private login_button = By.className("btn btn-primary p-user-menu-authenticate-button");
 
     //TEST 2
-    //private shoes_item =  By.cssSelector("a[data-pid='4099685699278']");
     private shoes_item = By.className("product-recommendation-link");
-    //even though it is used multiple times, this is how it works
     private shoes_size = By.id('attributes-container-size');
 
     //TEST 3
     private shoes_item2 = By.xpath('/html/body/div[5]/div[4]/div/div/div/div/div[1]/div/div[2]/a');
 
     //TEST 4
-    //private women_menu = By.className("p-nav-list");
     private women_menu = By.xpath('//li[@class="p-nav-item js-nav-item"]//a[@href="/de/en/women"]');
     private menu_item = By.xpath('//li[@class="p-sub-nav-tier2"]//a[@href="/de/en/women/shoes/sneakers"]');ž
 
     //TEST 1
     private search_bar = By.className("p-header-search-inner js-already-under-validation-rules");
-   // private search_item = By.className("p-header-search-field searchInput js-cmp-search-bar-input hf-validated hf-valid hf-in-range");
     private search_item = By.className("p-header-search-field searchInput js-cmp-search-bar-input");
-    //private search_item = By.className("p-header-actions-search-bar  js-cmp");
-    //private start_search_icon = By.className("p-header-search-icon js-cmp-search-bar-open-search-page");
     private start_search_icon = By.xpath("//div[@class='p-header-actions-search-bar  js-cmp']//div[@class= 'p-header-actions-search p-header-search'] //form[@class='p-header-search-inner js-already-under-validation-rules']//span[@class='p-header-search-icon js-cmp-search-bar-open-search-page']");
 
     //TEST 7
@@ -44,7 +38,6 @@ export class HomePage extends BasePage {
 
     //TEST 9
     private footer_tag= By.id("collapse-1");
-    //private return_policy = By.xpath('//a[@href="https://eu.puma.com/de/en/returning-items/HELP_Returning.html"]');
     private return_policy = By.xpath('/html/body/div[5]/footer/div/div/div[2]/div[1]/div/div[2]/div[2]/a[1]');
     
     constructor(driver: WebDriver) {
@@ -84,14 +77,11 @@ export class HomePage extends BasePage {
         await this.waitForElement(this.women_menu, 40000);
         const womenMenu = await this.findElement(this.women_menu);
         await this.driver.actions().move({ origin: womenMenu }).perform();
-        //await this.waitForElement(this.menu_item, 10000); 
-        //await this.findElement(this.women_menu);
     }
 
     async chooseMenuItem(){
-        await this.driver.sleep(1000)
-        //await this.driver.manage().setTimeouts({ implicit: 10000 }); //ovdje ne radi
-        //await this.waitForElement(this.women_menu, 40000);
+        await this.driver.sleep(1000);
+        //await this.driver.manage().setTimeouts({ implicit: 10000 }); //here, it does not work
         await this.findElementAndClick(this.menu_item);
     }
 
@@ -102,7 +92,6 @@ export class HomePage extends BasePage {
 
 
     async startSearch(){
-        //await this.waitForElement(this.start_search_icon, 10000);
         await this.findElementAndClick(this.start_search_icon);
     }
 

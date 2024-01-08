@@ -32,7 +32,8 @@ export class ViewCartPage extends BasePage {
     }
 
     async confirmSuccessfulRemoval(){
-        await this.findElementAndClick(this.confirm_successful_removal);
+        await this.findElement(this.confirm_successful_removal);
+        await this.checkMatchingElements(this.confirm_successful_removal, testData.verification_message.confirm_successful_removal);
     }
 
     //SMOKE TEST
