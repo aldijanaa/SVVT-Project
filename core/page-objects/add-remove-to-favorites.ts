@@ -20,8 +20,8 @@ export class CheckFavorites extends BasePage {
     private shoeSize =By.className("product-variation-content ");
 
     //NOTE ABOUT THIS: this shoe size can change, meaning test can pass one time and then after long time if i run it again it can fail, 
-    //because maybe that size is not available no more (so pay attention in mind to laways check whether the side that i am calling on is available)
-    private shoeSize2=By.xpath('//*[@id="swatch-0290"]');
+    //because maybe that size is not available no more (so pay attention in mind to  check whether the size that i am calling on is available)
+    private shoeSize2=By.xpath('//*[@id="swatch-0140"]');  //izmijenjena sneakers size zato sto se stranica promijenila
   
 
     private heart = By.className("btn btn-add-to-wish-list-pdp add-to-wish-list");
