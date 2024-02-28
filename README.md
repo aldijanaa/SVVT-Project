@@ -1,5 +1,6 @@
 # Software Verification, Validation and Testing Project
-## Following tests have been done on [Puma Official Website](https://eu.puma.com/de/en/home)
+##### This is the project of testing and vertification done in Selenium.
+#### Following tests have been done on [Puma Official Website](https://eu.puma.com/de/en/home)
 1. Regression Testing:
   - Product search
   - Add items to cart
