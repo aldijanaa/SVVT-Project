@@ -1,5 +1,5 @@
 # Software Verification, Validation and Testing Project
-##### This is the project of testing automation and vertification done using Selenium framework.
+##### This is the project of *testing automation and vertification* done using Selenium framework.
 #### Following tests have been done on [Puma Official Website](https://eu.puma.com/de/en/home)
 1. Regression Testing:
   - Product search
